@@ -13,7 +13,7 @@ const Cover = ({ img, title }) => {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold uppercase">{title}</h1>
-                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="mb-5">Welcome to your new home ! This modern and luxurious apartment offers a perfect blend of comfort, style, and convenience. Situated in the heart of Khulna , this residence provides easy access to local attractions, shopping, dining, and more.</p>
 
                     </div>
                 </div>

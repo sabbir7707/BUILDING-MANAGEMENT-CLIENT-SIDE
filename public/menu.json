@@ -1,0 +1,283 @@
+[
+    {
+      "image": "https://i.ibb.co/grRs1z8/62fbe2b973e644-14024544926.webp",
+      "floor_no": 1,
+      "block_name": "A",
+      "apartment_no": 101,
+      "rent": 1200
+    },
+    {
+      "image": "https://i.ibb.co/s60Lv0n/62fbe2e7521b69-75249685357.webp",
+      "floor_no": 1,
+      "block_name": "B",
+      "apartment_no": 102,
+      "rent": 1100
+    },
+    {
+      "image": "https://i.ibb.co/Xz1bmkR/62fbe0eb7c1c97-20905535711.webp",
+      "floor_no": 2,
+      "block_name": "A",
+      "apartment_no": 201,
+      "rent": 1300
+    },
+    {
+      "image": "https://i.ibb.co/LgbStyd/62fbe47bdb7769-19698860504.webp",
+      "floor_no": 2,
+      "block_name": "B",
+      "apartment_no": 202,
+      "rent": 1150
+    },
+    {
+      "image": "https://i.ibb.co/kGbxWx7/62fbe16bbd46c7-08719227375.webp",
+      "floor_no": 3,
+      "block_name": "A",
+      "apartment_no": 301,
+      "rent": 1400
+    },
+    {
+      "image": "https://i.ibb.co/6J8wnMD/6504be9a3b6205-70091468657.webp",
+      "floor_no": 3,
+      "block_name": "B",
+      "apartment_no": 302,
+      "rent": 1250
+    },
+    {
+      "image": "https://i.ibb.co/bgmtG9J/6504be9acb9265-42715691324.webp",
+      "floor_no": 4,
+      "block_name": "A",
+      "apartment_no": 401,
+      "rent": 1500
+    },
+    {
+      "image": "https://i.ibb.co/gjtp7Yh/645ea11b4ae275-77411881693.webp",
+      "floor_no": 4,
+      "block_name": "B",
+      "apartment_no": 402,
+      "rent": 1200
+    },
+    {
+      "image": "https://i.ibb.co/7NNtVjR/645ea122b78fa0-16608319571.webp",
+      "floor_no": 5,
+      "block_name": "A",
+      "apartment_no": 501,
+      "rent": 1600
+    },
+    {
+      "image": "https://i.ibb.co/0GvdWJS/6504be992b43d3-29322816983.webp",
+      "floor_no": 5,
+      "block_name": "B",
+      "apartment_no": 502,
+      "rent": 1300
+    },
+    {
+      "image": "https://i.ibb.co/cv47Lt0/6504be99baef56-17737560915.webp",
+      "floor_no": 6,
+      "block_name": "A",
+      "apartment_no": 601,
+      "rent": 1700
+    },
+    {
+      "image": "https://i.ibb.co/fXLC9s4/645ea124b9a7d8-46609279421.webp",
+      "floor_no": 6,
+      "block_name": "B",
+      "apartment_no": 602,
+      "rent": 1400
+    },
+    {
+      "image": "https://i.ibb.co/myKLky8/646a8d7b5c02ed523007bb8ad2214182l-m2425877349od-w480-h360.jpg",
+      "floor_no": 7,
+      "block_name": "A",
+      "apartment_no": 701,
+      "rent": 1800
+    },
+    {
+      "image": "https://i.ibb.co/pX3SwwV/apartment-18345221.jpg",
+      "floor_no": 7,
+      "block_name": "B",
+      "apartment_no": 702,
+      "rent": 1500
+    },
+    {
+      "image": "https://i.ibb.co/p3jtm6z/images-1.jpg",
+      "floor_no": 8,
+      "block_name": "A",
+      "apartment_no": 801,
+      "rent": 1900
+    },
+    {
+      "image": "https://i.ibb.co/GJ9Xt2d/images-2.jpg",
+      "floor_no": 8,
+      "block_name": "B",
+      "apartment_no": 802,
+      "rent": 1600
+    },
+    {
+      "image": "https://i.ibb.co/gSPJT8j/images-3.jpg",
+      "floor_no": 9,
+      "block_name": "A",
+      "apartment_no": 901,
+      "rent": 2000
+    },
+    {
+      "image": "https://i.ibb.co/LRT39jd/images-4.jpg",
+      "floor_no": 9,
+      "block_name": "B",
+      "apartment_no": 902,
+      "rent": 1700
+    },
+    {
+      "image": "https://i.ibb.co/BtBfh17/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg",
+      "floor_no": 10,
+      "block_name": "A",
+      "apartment_no": 1001,
+      "rent": 2100
+    },
+    {
+      "image": "https://i.ibb.co/BtBfh17/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg",
+      "floor_no": 10,
+      "block_name": "B",
+      "apartment_no": 1002,
+      "rent": 1800
+    },
+    {
+        "image": "https://i.ibb.co/Q8p0WqQ/645ea126cc0083-84342887912.webp",
+        "floor_no": 11,
+        "block_name": "A",
+        "apartment_no": 1101,
+        "rent": 2200
+      },
+      {
+        "image": "https://i.ibb.co/bgmtG9J/6504be9acb9265-42715691324.webp",
+        "floor_no": 11,
+        "block_name": "B",
+        "apartment_no": 1102,
+        "rent": 1900
+      },
+      {
+        "image": "https://i.ibb.co/bgmtG9J/6504be9acb9265-42715691324.webp",
+        "floor_no": 12,
+        "block_name": "A",
+        "apartment_no": 1201,
+        "rent": 2300
+      },
+      {
+        "image": "https://i.ibb.co/BtBfh17/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg",
+        "floor_no": 12,
+        "block_name": "B",
+        "apartment_no": 1202,
+        "rent": 2000
+      },
+      {
+        "image": "https://i.ibb.co/XFCMJrv/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg",
+        "floor_no": 13,
+        "block_name": "A",
+        "apartment_no": 1301,
+        "rent": 2400
+      },
+      {
+        "image": "https://i.ibb.co/8Y8bkSy/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg",
+        "floor_no": 13,
+        "block_name": "B",
+        "apartment_no": 1302,
+        "rent": 2100
+      },
+      {
+        "image": "https://i.ibb.co/JrGPTGd/modern-beadroom-hotel.jpg",
+        "floor_no": 14,
+        "block_name": "A",
+        "apartment_no": 1401,
+        "rent": 2500
+      },
+      {
+        "image": "https://i.ibb.co/GRxrvhT/images.jpg",
+        "floor_no": 14,
+        "block_name": "B",
+        "apartment_no": 1402,
+        "rent": 2200
+      },
+      {
+        "image": "https://i.ibb.co/myKLky8/646a8d7b5c02ed523007bb8ad2214182l-m2425877349od-w480-h360.jpg",
+        "floor_no": 15,
+        "block_name": "A",
+        "apartment_no": 1501,
+        "rent": 2600
+      },
+      {
+        "image": "https://i.ibb.co/s60Lv0n/62fbe2e7521b69-75249685357.webp",
+        "floor_no": 15,
+        "block_name": "B",
+        "apartment_no": 1502,
+        "rent": 2300
+      },
+      {
+        "image": "https://i.ibb.co/GJ9Xt2d/images-2.jpg",
+        "floor_no": 16,
+        "block_name": "A",
+        "apartment_no": 1601,
+        "rent": 2700
+      },
+      {
+        "image": "https://i.ibb.co/cv47Lt0/6504be99baef56-17737560915.webp",
+        "floor_no": 16,
+        "block_name": "B",
+        "apartment_no": 1602,
+        "rent": 2400
+      },
+      {
+        "image": "https://i.ibb.co/gjtp7Yh/645ea11b4ae275-77411881693.webp",
+        "floor_no": 17,
+        "block_name": "A",
+        "apartment_no": 1701,
+        "rent": 2800
+      },
+      {
+        "image": "https://i.ibb.co/LRT39jd/images-4.jpg",
+        "floor_no": 17,
+        "block_name": "B",
+        "apartment_no": 1702,
+        "rent": 2500
+      },
+      {
+        "image": "https://i.ibb.co/cv47Lt0/6504be99baef56-17737560915.webp",
+        "floor_no": 18,
+        "block_name": "A",
+        "apartment_no": 601,
+        "rent": 1700
+      },
+      {
+        "image": "https://i.ibb.co/fXLC9s4/645ea124b9a7d8-46609279421.webp",
+        "floor_no": 18,
+        "block_name": "B",
+        "apartment_no": 602,
+        "rent": 1400
+      },
+      {
+        "image": "https://i.ibb.co/myKLky8/646a8d7b5c02ed523007bb8ad2214182l-m2425877349od-w480-h360.jpg",
+        "floor_no": 19,
+        "block_name": "A",
+        "apartment_no": 701,
+        "rent": 1800
+      },
+      {
+        "image": "https://i.ibb.co/pX3SwwV/apartment-18345221.jpg",
+        "floor_no": 19,
+        "block_name": "B",
+        "apartment_no": 702,
+        "rent": 1500
+      },
+      {
+        "image": "https://i.ibb.co/p3jtm6z/images-1.jpg",
+        "floor_no": 20,
+        "block_name": "A",
+        "apartment_no": 801,
+        "rent": 1900
+      },
+      {
+        "image": "https://i.ibb.co/GJ9Xt2d/images-2.jpg",
+        "floor_no": 20,
+        "block_name": "B",
+        "apartment_no": 802,
+        "rent": 1600
+      }
+     
+  ]
