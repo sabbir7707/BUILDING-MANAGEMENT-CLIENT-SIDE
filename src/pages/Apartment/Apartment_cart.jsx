@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 
 const Apartment_cart = ({item}) => {
-       console.log(item);
+      /*  console.log(item); */
        const {image,
         _id,
        floor_no,
@@ -88,7 +88,7 @@ const Apartment_cart = ({item}) => {
             <div>
               <dt className="sr-only">Floor_No</dt>
       
-              <dd className="text-sm text-gray-500">Floor No: {floor_no}</dd>
+              <dd className="text-sm text-gray-500">Floor No: <span className="text-red-500"> {floor_no} </span> </dd>
             </div>
 
             </div>
