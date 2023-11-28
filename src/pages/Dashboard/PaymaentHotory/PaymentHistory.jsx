@@ -14,6 +14,10 @@ const PaymentHistory = () => {
         }
     })
 
+    
+     console.log(payments.floor_no);
+     console.log(payments);
+     
     return (
         <div>
             <h2 className="text3-xl">Total Payments: {payments.length}</h2>
@@ -24,6 +28,12 @@ const PaymentHistory = () => {
                         <tr>
                             <th>#</th>
                             <th>price</th>
+                            <th>Floor No</th>
+
+                            <th>Block Name</th>
+                            <th>Apartment No</th>
+                            <th>price</th>
+
                             <th>Transaction Id</th>
                             <th>Status</th>
                         </tr>
@@ -31,7 +41,8 @@ const PaymentHistory = () => {
                     <tbody>
                         {payments.map((payment, index) => <tr key={payment._id}>
                             <th>{index + 1}</th>
-                            <td>${payment.price}</td>
+                            <td>${payment.rent}</td>
+                            {/* <td>{payment.floor_no}</td> */}
                             <td>{payment.transactionId}</td>
                             <td>{payment.status}</td>
                         </tr>)}

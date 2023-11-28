@@ -53,7 +53,10 @@ const ManageItems = () => {
                                     #
                                 </th>
                                 <th>Image</th>
-                                <th>Item Name</th>
+
+                                <th> Floor No</th>
+                                <th> Block Name</th>
+                                <th> Apartment No</th>
                                 <th>Price</th>
                                 <th>Update</th>
                                 <th>Delete</th>
@@ -75,9 +78,13 @@ const ManageItems = () => {
                                         </div>
                                     </td>
                                     <td>
-                                        {item.name}
+                                    Floor No :{item. floor_no}
                                     </td>
-                                    <td className="text-right">${item.price}</td>
+
+                                    <td className=""> Block Name :  <span className="text-red-500"> {item.block_name} </span>  </td>
+                                    <td className=""> Apartment No:  {item.apartment_no}</td>
+                                    <td className="">${item.rent}</td>
+
                                     <td>
                                         <Link to={`/dashboard/updateItem/${item._id}`}>
                                             <button

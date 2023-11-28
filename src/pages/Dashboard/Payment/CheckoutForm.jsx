@@ -18,8 +18,11 @@ const CheckoutForm = () => {
     const [cart, refetch] = useCart();
     const navigate = useNavigate();
 
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0)
+    const totalPrice = cart.reduce((total, item) => total + item.rent, 0)
+ 
 
+    
+  
     useEffect(() => {
         if (totalPrice > 0) {
             axiosSecure.post('/create-payment-intent', { price: totalPrice })
@@ -78,16 +81,24 @@ const CheckoutForm = () => {
                 console.log('transaction id', paymentIntent.id);
                 setTransactionId(paymentIntent.id);
 
+
+
                 // now save the payment in the database
                 const payment = {
                     email: user.email,
-                    price: totalPrice,
+                    name: user.displayName,
+                     rent: totalPrice,
                     transactionId: paymentIntent.id,
                     date: new Date(), // utc date convert. use moment js to 
                     cartIds: cart.map(item => item._id),
                     menuItemIds: cart.map(item => item.menuId),
+                    FloorNO: cart.map(item => item. floor_no),
+                    Block_name: cart.map(item => item.block_name),
+                    Apartment_no :cart.map(item => item.apartment_no),
                     status: 'pending'
+
                 }
+                
 
                 const res = await axiosSecure.post('/payments', payment);
                 console.log('payment saved', res.data);
@@ -126,7 +137,7 @@ const CheckoutForm = () => {
                     },
                 }}
             />
-            <button className="btn btn-sm btn-primary my-4" type="submit"  disabled={!stripe || !clientSecret} >
+            <button className="btn btn-sm btn-primary my-4" type="submit"  disabled={!stripe || !clientSecret}   >
                 Pay
             </button>
             <p className="text-red-600">{error}</p>

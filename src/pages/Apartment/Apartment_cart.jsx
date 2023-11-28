@@ -15,6 +15,7 @@ const Apartment_cart = ({item}) => {
        rent} = item ;
 
        const { user } = useAuth();
+      /*  console.log(user); */
        const navigate = useNavigate();
        const location = useLocation();
        const axiosSecure = useAxiosSecure();
@@ -26,7 +27,13 @@ const Apartment_cart = ({item}) => {
                const cartItem = {
                    menuId: _id,
                    email: user.email,
+                  name: user.displayName,
+                  date: user.metadata .lastSignInTime,
                    image,
+                   floor_no,
+                   block_name,
+                   apartment_no,
+                   rent,
                 
                }
                axiosSecure.post('/carts', cartItem)

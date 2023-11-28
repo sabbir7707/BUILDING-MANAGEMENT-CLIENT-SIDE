@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
     const [cart, refetch] = useCart();
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+    const totalPrice = cart.reduce((total, item) => total + item.rent, 0);
     const axiosSecure = useAxiosSecure();
 
     const handleDelete = id => {
@@ -40,7 +40,7 @@ const Cart = () => {
     return (
         <div>
             <div className="flex justify-evenly mb-8">
-                <h2 className="text-4xl">Items: {cart.length}</h2>
+                <h2 className="text-4xl">Apartment No: {cart.length}</h2>
                 <h2 className="text-4xl">Total Price: {totalPrice}</h2>
                 {cart.length ? <Link to="/dashboard/payment">
                     <button className="btn btn-primary">Pay</button>
@@ -59,7 +59,10 @@ const Cart = () => {
                             </th>
                             <th>Image</th>
                             <th>Name</th>
-                            <th>Price</th>
+                            <th>price</th>
+                            <th> Floor No</th>
+                            <th> Block Name</th>
+                            <th>Apartment No</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -81,7 +84,11 @@ const Cart = () => {
                                 <td>
                                     {item.name}
                                 </td>
-                                <td>${item.price}</td>
+                                <td>${item.rent}</td>
+                                <td>  Floor No : <span className="text-red-500">  {item. floor_no} </span> </td>
+                                <td>  Block :{item. block_name}</td>
+
+                                <td> Apartment No:{item. apartment_no}</td>
                                 <th>
                                     <button
                                         onClick={() => handleDelete(item._id)}
