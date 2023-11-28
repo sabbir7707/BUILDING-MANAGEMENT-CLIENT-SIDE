@@ -124,9 +124,9 @@ const UpdateItem = () => {
                     </div>
 
                     <button className="btn">
-                        <Link to='/dashboard/manageItems'> 
+                        
                         Update Item 
-                        </Link> 
+                      
                         
                     </button>
                 </form>
