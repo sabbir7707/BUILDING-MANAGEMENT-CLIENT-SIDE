@@ -4,10 +4,13 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
+import useAuth from "../../../hooks/useAuth";
 
 
 
 const MakeAnnouncement = () => {
+    const {user} = useAuth();
+    console.log(user);
 
     const { register, handleSubmit, reset } = useForm();
    
@@ -19,6 +22,9 @@ const MakeAnnouncement = () => {
 
             // now send the menu item data to the server with the image url
             const menuItem = {
+               email: user.email,
+               photo: user.photoURL,
+               Name: user.displayName,
                 title: data.title,
                 description: data.description,
 

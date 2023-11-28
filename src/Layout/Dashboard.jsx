@@ -85,9 +85,9 @@ const Dashboard = () => {
                                                  Make Payment</NavLink>
                                         </li>
                                         <li className="dark:bg-gray-800 dark:text-gray-50">
-                                            <NavLink to="/dashboard/history">
+                                            <NavLink to="/dashboard/UserAnnouncement">
                                                 <FaCalendar></FaCalendar>
-                                                Not History</NavLink>
+                                                Announcement</NavLink>
                                         </li>
 
                                       {/*   <li className="dark:bg-gray-800 dark:text-gray-50">

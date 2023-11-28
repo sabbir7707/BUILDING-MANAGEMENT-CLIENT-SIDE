@@ -21,6 +21,8 @@ import Apartment from "../pages/Apartment/Apartment";
 import Profile from "../pages/Shared/NavBar/Profile";
 import Makepayment from "../pages/Dashboard/Makepayment/Makepayment";
 import MakeAnnouncement from "../pages/Dashboard/MakeAnnouncement/MakeAnnouncement";
+import UserAnnouncement from "../pages/Dashboard/UserAnnouncement/UserAnnouncement";
+import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 
 
 export const router = createBrowserRouter([
@@ -64,6 +66,14 @@ export const router = createBrowserRouter([
       {
         path: 'makepayment',
         element: <Makepayment></Makepayment>
+      },
+      {
+        path: 'UserAnnouncement',
+        element: <UserAnnouncement></UserAnnouncement>
+      },
+      {
+        path: 'adminHome',
+        element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
       },
       {
         path: 'makeAnnouncement',
