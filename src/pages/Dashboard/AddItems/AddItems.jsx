@@ -27,10 +27,10 @@ const AddItems = () => {
         if (res.data.success) {
             // now send the menu item data to the server with the image url
             const menuItem = {
-                name: data.name,
-                category: data.category,
-                price: parseFloat(data.price),
-                recipe: data.recipe,
+                apartment_no: data.apartment_no,
+                floor_no: data.floor_no,
+                rent: parseFloat(data.rent),
+                block_name: data. block_name,
                 image: res.data.data.display_url
             }
             // 
@@ -58,12 +58,12 @@ const AddItems = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-full my-6">
                         <label className="label">
-                            <span className="label-text">Recipe Name*</span>
+                            <span className="label-text">Apartment No*</span>
                         </label>
                         <input
                             type="text"
-                            placeholder="Recipe Name"
-                            {...register('name', { required: true })}
+                            placeholder="Apartment No"
+                            {...register('apartment_no', { required: true })}
                             required
                             className="input input-bordered w-full" />
                     </div>
@@ -71,46 +71,53 @@ const AddItems = () => {
                         {/* category */}
                         <div className="form-control w-full my-6">
                             <label className="label">
-                                <span className="label-text">Category*</span>
-                            </label>
-                            <select defaultValue="default" {...register('category', { required: true })}
-                                className="select select-bordered w-full">
-                                <option disabled value="default">Select a category</option>
-                                <option value="salad">Salad</option>
-                                <option value="pizza">Pizza</option>
-                                <option value="soup">Soup</option>
-                                <option value="dessert">Dessert</option>
-                                <option value="drinks">Drinks</option>
-                            </select>
-                        </div>
-
-                        {/* price */}
-                        <div className="form-control w-full my-6">
-                            <label className="label">
-                                <span className="label-text">Price*</span>
+                                <span className="label-text">Floor No*</span>
                             </label>
                             <input
                                 type="number"
-                                placeholder="Price"
-                                {...register('price', { required: true })}
+                                placeholder="floor_no"
+                                {...register('floor_no', { required: true })}
+                                className="input input-bordered w-full" />
+                        </div>
+
+                    <div className="form-control w-full my-6">
+                        <label className="label">
+                            <span className="label-text">block Name</span>
+                        </label>
+                        <input
+                            type="text"
+                            placeholder="block Name"
+                            {...register('block_name', { required: true })}
+                            required
+                            className="input input-bordered w-full" />
+                    </div>
+
+                       <div className="form-control w-full my-6">
+                            <label className="label">
+                                <span className="label-text">Rent*</span>
+                            </label>
+                            <input
+                                type="number"
+                                 placeholder="Price"
+                                {...register('rent', { required: true })}
                                 className="input input-bordered w-full" />
                         </div>
 
                     </div>
                     {/* recipe details */}
-                    <div className="form-control">
+                   {/*  <div className="form-control">
                         <label className="label">
                             <span className="label-text">Recipe Details</span>
                         </label>
                         <textarea {...register('recipe')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
                     </div>
-
+ */}
                     <div className="form-control w-full my-6">
                         <input {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
                     </div>
 
                     <button className="btn">
-                        Add Item <FaUtensils className="ml-4"></FaUtensils>
+                        Add Item 
                     </button>
                 </form>
             </div>

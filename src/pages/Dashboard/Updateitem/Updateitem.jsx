@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
@@ -9,7 +9,7 @@ const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const UpdateItem = () => {
-    const {apartment_no,floor_no,  block_name, rent, _id} = useLoaderData();
+    const {apartment_no,floor_no,block_name, rent, _id} = useLoaderData();
 
     const { register, handleSubmit } = useForm();
     const axiosPublic = useAxiosPublic();
@@ -43,7 +43,7 @@ const UpdateItem = () => {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: `${data.name} is updated to the menu.`,
+                    title: `${data.apartment_no} is updated to the menu.`,
                     showConfirmButton: false,
                     timer: 1500
                   });
@@ -61,16 +61,29 @@ const UpdateItem = () => {
 
                     <div className="form-control w-full my-6">
                         <label className="label">
-                            <span className="label-text">Apartment No</span>
+                            <span className="label-text">Apartment No*</span>
                         </label>
                         <input
                             type="text"
-                            defaultValue={apartment_no}
                             placeholder="Apartment No"
+                            defaultValue={apartment_no}
                             {...register('apartment_no', { required: true })}
                             required
                             className="input input-bordered w-full" />
                     </div>
+                    <div className="flex gap-6">
+                        {/* category */}
+                        <div className="form-control w-full my-6">
+                            <label className="label">
+                                <span className="label-text">Floor No*</span>
+                            </label>
+                            <input
+                                type="number"
+                                placeholder="floor_no"
+                                defaultValue={floor_no}
+                                {...register('floor_no', { required: true })}
+                                className="input input-bordered w-full" />
+                        </div>
 
                     <div className="form-control w-full my-6">
                         <label className="label">
@@ -78,56 +91,43 @@ const UpdateItem = () => {
                         </label>
                         <input
                             type="text"
-                            defaultValue={ block_name}
-                            placeholder="Apartment No"
-                            {...register(' block_name', { required: true })}
+                            placeholder="block Name"
+                            defaultValue={block_name}
+                            {...register('block_name', { required: true })}
                             required
                             className="input input-bordered w-full" />
                     </div>
 
-                    
-
-                    <div className="flex gap-6">
-                        {/* category */}
-                        {/* price */}
-                        <div className="form-control w-full my-6">
+                       <div className="form-control w-full my-6">
                             <label className="label">
                                 <span className="label-text">Rent*</span>
                             </label>
                             <input
                                 type="number"
-                                defaultValue={rent}
-                                placeholder="Price"
-                                {...register('price', { required: true })}
-                                className="input input-bordered w-full" />
-                        </div>
-                        <div className="form-control w-full my-6">
-                            <label className="label">
-                                <span className="label-text">Floor No*</span>
-                            </label>
-                            <input
-                                type="number"
-                                defaultValue={floor_no}
-                                placeholder="floor_no"
-                                {...register('floor_no', { required: true })}
+                                 placeholder="Rent"
+                                 defaultValue={rent}
+                                {...register('rent', { required: true })}
                                 className="input input-bordered w-full" />
                         </div>
 
                     </div>
-                     {/* recipe details */}
+                    {/* recipe details */}
                    {/*  <div className="form-control">
                         <label className="label">
                             <span className="label-text">Recipe Details</span>
                         </label>
-                        <textarea defaultValue={recipe} {...register('recipe')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
-                    </div> */}
-
+                        <textarea {...register('recipe')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                    </div>
+ */}
                     <div className="form-control w-full my-6">
                         <input {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
                     </div>
 
                     <button className="btn">
-                        Update menu Item
+                        <Link to='/dashboard/manageItems'> 
+                        Update Item 
+                        </Link> 
+                        
                     </button>
                 </form>
             </div>
