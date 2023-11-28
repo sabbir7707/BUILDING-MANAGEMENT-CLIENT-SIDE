@@ -117,8 +117,7 @@ const UpdateItem = () => {
                             <span className="label-text">Recipe Details</span>
                         </label>
                         <textarea {...register('recipe')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
-                    </div>
- */}
+                    </div>*/}
                     <div className="form-control w-full my-6">
                         <input {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
                     </div>

@@ -16,7 +16,7 @@ const Dashboard = () => {
 
     return (
         <div className=" flex ">
-            <div className="h-full p-3 space-y-2 w-60 bg-gray-900 text-gray-100">
+            <div className="min-h-screen rounded-b-2xl p-3 space-y-2 w-60 bg-gray-900 text-gray-100">
                 <div className="flex items-center p-2 space-x-4">
 
 
@@ -50,6 +50,11 @@ const Dashboard = () => {
                                         <NavLink to="/dashboard/addItems">
                                         <FaAddressBook/>
                                             Add Items</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/makeAnnouncement">
+                                        <FaAddressBook/>
+                                        Make Announcement</NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/dashboard/manageItems">

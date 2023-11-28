@@ -20,6 +20,7 @@ import PaymentHistory from "../pages/Dashboard/PaymaentHotory/PaymentHistory";
 import Apartment from "../pages/Apartment/Apartment";
 import Profile from "../pages/Shared/NavBar/Profile";
 import Makepayment from "../pages/Dashboard/Makepayment/Makepayment";
+import MakeAnnouncement from "../pages/Dashboard/MakeAnnouncement/MakeAnnouncement";
 
 
 export const router = createBrowserRouter([
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
       {
         path: 'makepayment',
         element: <Makepayment></Makepayment>
+      },
+      {
+        path: 'makeAnnouncement',
+        element: <AdminRoute>  <MakeAnnouncement></MakeAnnouncement>  </AdminRoute>
       },
 
       // admin routes
