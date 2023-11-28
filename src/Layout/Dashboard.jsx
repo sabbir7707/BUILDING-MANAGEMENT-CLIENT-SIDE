@@ -1,9 +1,10 @@
 
-import { FaAd, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaShoppingCart, FaUsers, FaUtensils } from "react-icons/fa";
+import { FaAd, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaUsers, FaUtensils } from "react-icons/fa";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import useCart from "../hooks/useCart";
 import useAdmin from "../hooks/useAdmin";
 import useAuth from "../hooks/useAuth";
+import { MdOutlinePayment } from "react-icons/md";
 
 
 const Dashboard = () => {
@@ -72,6 +73,11 @@ const Dashboard = () => {
                                             <NavLink to="/dashboard/cart">
                                                 <FaHome></FaHome>
                                                 My Profile</NavLink>
+                                        </li>
+                                        <li className="dark:bg-gray-800 dark:text-gray-50">
+                                            <NavLink to="/dashboard/makepayment">
+                                            <MdOutlinePayment />
+                                                 Make Payment</NavLink>
                                         </li>
                                         <li className="dark:bg-gray-800 dark:text-gray-50">
                                             <NavLink to="/dashboard/history">
