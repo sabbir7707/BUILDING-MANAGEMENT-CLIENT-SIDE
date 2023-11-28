@@ -18,6 +18,7 @@ import UpdateItem from "../pages/Dashboard/Updateitem/Updateitem";
 import Payment from "../pages/Dashboard/Payment/payment";
 import PaymentHistory from "../pages/Dashboard/PaymaentHotory/PaymentHistory";
 import Apartment from "../pages/Apartment/Apartment";
+import Profile from "../pages/Shared/NavBar/Profile";
 
 
 export const router = createBrowserRouter([
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login></Login>
+      },
+      {
+        path: 'userProfile',
+        element: <Profile></Profile>
       },
       {
         path: 'signup',

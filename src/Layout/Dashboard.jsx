@@ -20,20 +20,9 @@ const Dashboard = () => {
 
 
 
+
                     {
-                      /*   user ? <>
-                         <li>
-                                <NavLink to="/dashboard/adminHome">
-                                    <FaHome></FaHome>
-                                    Admin Home</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/dashboard/addItems">
-                                    <FaUtensils></FaUtensils>
-                                    Add Items</NavLink>
-                            </li>
-                        </>
-                        : */
+                         
 
                         isAdmin ? <>
                             <li>
