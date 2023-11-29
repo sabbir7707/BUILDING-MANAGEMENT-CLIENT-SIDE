@@ -49,7 +49,7 @@ const MakeAnnouncement = () => {
 
     return (
         <div>
-            <SectionTitle heading="add an item" subHeading="What's new?" ></SectionTitle>
+            
             <div>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
