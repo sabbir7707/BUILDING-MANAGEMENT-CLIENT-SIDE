@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import PaymentHistoryShow from "./PaymentHistoryShow";
 
 const PaymentHistory = () => {
     const { user } = useAuth();
@@ -17,40 +18,20 @@ const PaymentHistory = () => {
     
      console.log(payments.floor_no);
      console.log(payments);
-     
+    
     return (
-        <div>
-            <h2 className="text3-xl">Total Payments: {payments.length}</h2>
-            <div className="overflow-x-auto">
-                <table className="table table-zebra">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>price</th>
-                            <th>Floor No</th>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2" >  
+           
+              {
+                    payments.map(item => <PaymentHistoryShow key={item._id}
+                        item={item}
+                    >
 
-                            <th>Block Name</th>
-                            <th>Apartment No</th>
-                            <th>price</th>
-
-                            <th>Transaction Id</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {payments.map((payment, index) => <tr key={payment._id}>
-                            <th>{index + 1}</th>
-                            <td>${payment.rent}</td>
-                            {/* <td>{payment.floor_no}</td> */}
-                            <td>{payment.transactionId}</td>
-                            <td>{payment.status}</td>
-                        </tr>)}
-                        
-                    </tbody>
-                </table>
-            </div>
-        </div>
+                    </PaymentHistoryShow>)
+                }
+    
+    </div>
+    
     );
 };
 

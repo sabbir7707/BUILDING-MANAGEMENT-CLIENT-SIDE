@@ -23,12 +23,16 @@ import Makepayment from "../pages/Dashboard/Makepayment/Makepayment";
 import MakeAnnouncement from "../pages/Dashboard/MakeAnnouncement/MakeAnnouncement";
 import UserAnnouncement from "../pages/Dashboard/UserAnnouncement/UserAnnouncement";
 import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
+import Errorpage from "../Layout/Errorpage";
+import Contact from "../pages/Dashboard/ContactPage/Contact";
+import Agreement_requests from "../pages/Dashboard/Agreement_requests/Agreement_requests";
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <Errorpage></Errorpage>,
     children: [
       {
         path: '/',
@@ -64,6 +68,10 @@ export const router = createBrowserRouter([
         element: <Cart></Cart>
       },
       {
+        path: 'contact',
+        element: <Contact></Contact>
+      },
+      {
         path: 'makepayment',
         element: <Makepayment></Makepayment>
       },
@@ -84,6 +92,10 @@ export const router = createBrowserRouter([
       {
         path: 'manageItems',
         element: <AdminRoute>  <ManageItems></ManageItems> </AdminRoute>
+      },
+      {
+        path: 'Agreement_requests',
+        element: <AdminRoute>  <Agreement_requests></Agreement_requests> </AdminRoute>
       },
       {
         path: 'payment',

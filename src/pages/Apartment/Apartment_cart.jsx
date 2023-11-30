@@ -36,14 +36,14 @@ const Apartment_cart = ({item}) => {
                    rent,
                 
                }
-               axiosSecure.post('/carts', cartItem)
+               axiosSecure.post('/agreement', cartItem)
                    .then(res => {
                        console.log(res.data)
                        if (res.data.insertedId) {
                            Swal.fire({
                                position: "top-end",
                                icon: "success",
-                               title: `${name} added to your cart`,
+                               title: `${apartment_no} added to your cart`,
                                showConfirmButton: false,
                                timer: 1500
                            });

@@ -16,11 +16,11 @@ const Dashboard = () => {
 
     return (
         <div className=" flex ">
-            <div className="min-h-screen rounded-b-2xl p-3 space-y-2 w-60 bg-gray-900 text-gray-100">
-                <div className="flex items-center p-2 space-x-4">
+            <div className="min-h-screen rounded-b-2xl p-3 space-y-2 w-auto bg-gray-900 text-gray-100 ">
+                <div className="flex items-center p-2 space-x-2">
 
 
-        <img src= {user?.photoURL } alt="" className="w-12 h-12 rounded-full bg-gray-500" />
+                        <img src= {user?.photoURL } alt="" className="w-12 h-12 rounded-full bg-gray-500" />
                     <div>
                         <h2 className="text-lg font-semibold">{user?.displayName}</h2>
                         <span className="flex items-center space-x-1">
@@ -38,7 +38,7 @@ const Dashboard = () => {
 
                 <div className="divide-y divide-gray-700">
                     <ul className="pt-2 pb-4 space-y-1 text-sm">
-                        <ul className="menu p-4">
+                        <ul className="menu p-2">
                             {
                                 isAdmin ? <>
                                     <li className="dark:bg-gray-800 dark:text-gray-50">
@@ -62,9 +62,9 @@ const Dashboard = () => {
                                             Manage Items</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/dashboard/bookings">
+                                        <NavLink to="/dashboard/Agreement_requests">
                                             <FaBook></FaBook>
-                                            Manage Bookings</NavLink>
+                                            Agreement requests</NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/dashboard/users">
@@ -123,7 +123,7 @@ const Dashboard = () => {
                                     Menu</NavLink>
                             </li>
                             <li className="dark:bg-gray-800 dark:text-gray-50">
-                                <NavLink to="/order/contact">
+                                <NavLink to="/dashboard/contact">
                                     <FaEnvelope></FaEnvelope>
                                     Contact</NavLink>
                             </li>
