@@ -61,15 +61,6 @@ const { apartment_no,
 
 
 
-
-
-
-
-
-
-
-
-
     const handleDelete = id => {
         Swal.fire({
             title: "Are you sure?",
@@ -85,8 +76,8 @@ const { apartment_no,
                 axiosPublic.delete(`/agreement/${id}`)
                     .then(res => {
                         if (res.data.deletedCount > 0) {
-                           /*  window.location.reload(); */
-                           refetch();
+                             window.location.reload(); 
+                        
                             Swal.fire({
                                 title: "Deleted!",
                                 text: "Your file has been deleted.",
@@ -105,9 +96,9 @@ const { apartment_no,
               >
               <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
       
-      
+    
                   <a href="#">
-                      <h3 className="mt-0.5 text-lg font-medium text-gray-900">
+                      <h3 className="mt-0.5 text-xs md:text-lg font-medium text-gray-900">
                           Email:{email}
                       </h3>
                       <h3 className="mt-0.5 text-sm font-medium text-gray-900">
@@ -142,7 +133,7 @@ const { apartment_no,
                           className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
                       >
                          <button
-                        onClick={handleAddToCart}> Accepet </button>
+                        onClick={handleAddToCart}> Accept  </button>
                       </span>
                   </div>
               </div>

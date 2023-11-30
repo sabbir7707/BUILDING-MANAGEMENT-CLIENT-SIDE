@@ -29,8 +29,9 @@ const Agreement_requests = () => {
  
     return (
         <div>
-        <div className=" grid  grid-cols-1 gap-y-8">
-            <SectionTitle heading="Agreement" subHeading=" Agreement" ></SectionTitle>
+             <SectionTitle heading="Agreement" subHeading=" Agreement" ></SectionTitle>
+        <div className=" grid grid-cols-1   md:grid-cols-2  gap-y-8 gap-x-2">
+           
             {
                 agreement.map(item => <Agreement_requests_cart key={item._id}
                     item={item}

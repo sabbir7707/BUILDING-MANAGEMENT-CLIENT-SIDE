@@ -20,15 +20,15 @@ const Footer = () => {
                                 />
                             </svg>
                             <h2 className="text-2xl font-bold text-gray-900">
-                                Get the latest news!
+                            Welcome to .CR point
                             </h2>
                         </div>
 
                         <p
                             className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
                         >
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-                            consequuntur amet culpa cum itaque neque.
+
+                            The most exciting restaurants are found here, as well as some of the city's most popular breweries and distilleries. But it's more than just restaurants and nightlife. Walker's Point is also home to the Global Water Center, Reed Street Yards, Rockwell Automation, and UWM's School of Freshwater Sciences.
                         </p>
 
                         <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -151,45 +151,7 @@ const Footer = () => {
                         className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2"
                     >
                         <div className="text-center sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">About Us</p>
-
-                            <ul className="mt-8 space-y-4 text-sm">
-                                <li>
-                                    <a
-                                        className="text-gray-700 transition hover:text-gray-700/75"
-                                        href="/"
-                                    >
-                                        Company History
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className="text-gray-700 transition hover:text-gray-700/75"
-                                        href="/"
-                                    >
-                                        Meet the Team
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className="text-gray-700 transition hover:text-gray-700/75"
-                                        href="/"
-                                    >
-                                        Employee Handbook
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className="text-gray-700 transition hover:text-gray-700/75"
-                                        href="/"
-                                    >
-                                        Careers
-                                    </a>
-                                </li>
-                            </ul>
+                          
                         </div>
 
                         <div className="text-center sm:text-left">
@@ -201,7 +163,7 @@ const Footer = () => {
                                         className="text-gray-700 transition hover:text-gray-700/75"
                                         href="/"
                                     >
-                                        Web Development
+                                        Fitness Center
                                     </a>
                                 </li>
 
@@ -210,7 +172,7 @@ const Footer = () => {
                                         className="text-gray-700 transition hover:text-gray-700/75"
                                         href="/"
                                     >
-                                        Web Design
+                                       Bike Repair Station
                                     </a>
                                 </li>
 
@@ -219,7 +181,9 @@ const Footer = () => {
                                         className="text-gray-700 transition hover:text-gray-700/75"
                                         href="/"
                                     >
-                                        Marketing
+                                       Parking Garage
+
+
                                     </a>
                                 </li>
 
@@ -228,7 +192,7 @@ const Footer = () => {
                                         className="text-gray-700 transition hover:text-gray-700/75"
                                         href="/"
                                     >
-                                        Google Ads
+                                        Patio
                                     </a>
                                 </li>
                             </ul>
@@ -304,7 +268,7 @@ const Footer = () => {
                                             />
                                         </svg>
 
-                                        <span className="flex-1 text-gray-700">john@doe.com</span>
+                                        <span className="flex-1 text-gray-700">sabbirhosain@gamil.com</span>
                                     </a>
                                 </li>
 
@@ -328,7 +292,7 @@ const Footer = () => {
                                             />
                                         </svg>
 
-                                        <span className="flex-1 text-gray-700">0123456789</span>
+                                        <span className="flex-1 text-gray-700">01989707842</span>
                                     </a>
                                 </li>
 
@@ -356,7 +320,7 @@ const Footer = () => {
                                     </svg>
 
                                     <address className="-mt-0.5 flex-1 not-italic text-gray-700">
-                                        213 Lane, London, United Kingdom
+                                        213 Lane,  Daulatpur  Khulna
                                     </address>
                                 </li>
                             </ul>

@@ -11,12 +11,12 @@ const Dashboard = () => {
     const { user } = useAuth();
     const [cart] = useCart();
 
-    // TODO: get isAdmin value from the database
+ 
     const [isAdmin] = useAdmin();
 
     return (
         <div className=" flex ">
-            <div className="min-h-screen rounded-b-2xl p-3 space-y-2 w-auto bg-gray-900 text-gray-100 ">
+            <div className="min-h-screen rounded-b-2xl p-3 space-y-2  md:w-60  lg:w-60 bg-gray-900 text-gray-100 ">
                 <div className="flex items-center p-2 space-x-2">
 
 
@@ -77,7 +77,7 @@ const Dashboard = () => {
                                         <li className="dark:bg-gray-800 dark:text-gray-50">
                                             <NavLink to="/dashboard/cart">
                                                 <FaHome></FaHome>
-                                                My Profile</NavLink>
+                                                My Apartment</NavLink>
                                         </li>
                                         <li className="dark:bg-gray-800 dark:text-gray-50">
                                             <NavLink to="/dashboard/makepayment">
@@ -90,17 +90,7 @@ const Dashboard = () => {
                                                 Announcement</NavLink>
                                         </li>
 
-                                      {/*   <li className="dark:bg-gray-800 dark:text-gray-50">
-                                            <NavLink to="/dashboard/cart">
-                                                <FaShoppingCart></FaShoppingCart>
-                                                My Cart ({cart.length})</NavLink>
-                                        </li> */}
-
-                                        <li className="dark:bg-gray-800 dark:text-gray-50">
-                                            <NavLink to="/dashboard/review">
-                                                <FaAd></FaAd>
-                                                Add a Review</NavLink>
-                                        </li >
+        
                                         <li className="dark:bg-gray-800 dark:text-gray-50">
                                             <NavLink to="/dashboard/paymentHistory">
                                                 <FaList></FaList>

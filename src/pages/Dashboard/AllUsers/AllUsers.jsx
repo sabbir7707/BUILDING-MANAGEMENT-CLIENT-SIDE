@@ -14,6 +14,8 @@ const AllUsers = () => {
         }
     })
 
+
+
     const handleMakeAdmin = user =>{
         axiosSecure.patch(`/users/admin/${user._id}`)
         .then(res =>{
@@ -79,7 +81,7 @@ const AllUsers = () => {
                     <tbody>
                         {
                             users.map((user, index) => <tr key={user._id}>
-                                <th>{index + 1}</th>
+                                <th>{index + 1 }</th>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>

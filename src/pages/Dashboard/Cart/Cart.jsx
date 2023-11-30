@@ -2,14 +2,14 @@ import { FaTrashAlt } from "react-icons/fa";
 import useCart from "../../../hooks/useCart";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import { Link } from "react-router-dom";
+
 import useAuth from "../../../hooks/useAuth";
 
 
 const Cart = () => {
     const {user} = useAuth ();
     const [cart, refetch] = useCart();
-    const totalPrice = cart.reduce((total, item) => total + item.rent, 0);
+   /*  const totalPrice = cart.reduce((total, item) => total + item.rent, 0); */
     const axiosSecure = useAxiosSecure();
 
     const handleDelete = id => {
