@@ -44,7 +44,7 @@ const Dashboard = () => {
                                     <li className="dark:bg-gray-800 dark:text-gray-50">
                                         <NavLink to="/dashboard/adminHome">
                                             <FaHome></FaHome>
-                                            Admin Home</NavLink>
+                                            Admin Profile</NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/dashboard/addItems">

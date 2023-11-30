@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import PaymentHistoryShow from "./PaymentHistoryShow";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const PaymentHistory = () => {
     const { user } = useAuth();
@@ -20,6 +21,8 @@ const PaymentHistory = () => {
      console.log(payments);
     
     return (
+        <div> 
+            <SectionTitle heading="Apartment" subHeading="  payment History" ></SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2" >  
            
               {
@@ -30,6 +33,7 @@ const PaymentHistory = () => {
                     </PaymentHistoryShow>)
                 }
     
+    </div>
     </div>
     
     );

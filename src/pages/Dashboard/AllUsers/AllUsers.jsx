@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { FaTrashAlt, FaUsers } from "react-icons/fa";
 import Swal from "sweetalert2";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 
 const AllUsers = () => {
@@ -62,9 +63,10 @@ const AllUsers = () => {
 
     return (
         <div>
+              <SectionTitle heading=" ALL member" subHeading="    Apartment User" ></SectionTitle>
             <div className="flex justify-evenly my-4">
-                <h2 className="text-3xl">All Users</h2>
-                <h2 className="text-3xl">Total Users: {users.length}</h2>
+                
+                <h2 className="text-3xl">Total member: {users.length}</h2>
             </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
